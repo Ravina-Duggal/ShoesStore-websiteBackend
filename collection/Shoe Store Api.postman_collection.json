@@ -1,0 +1,597 @@
+{
+	"info": {
+		"_postman_id": "8843ff8b-d815-4b49-9d7f-de8b6ea06697",
+		"name": "Shoe Store Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Add category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "category_name",
+									"value": "Formal22",
+									"type": "default"
+								},
+								{
+									"key": "category_image",
+									"value": "image",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/admin/addcategory",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"addcategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/admin/getallcategory",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"getallcategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get single category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6448d0c579c3393fcf088ece",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/admin/getsinglecategory",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"getsinglecategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6448d03c79c3393fcf088ecc",
+									"type": "default"
+								},
+								{
+									"key": "category_name",
+									"value": "Formal shoes",
+									"type": "default"
+								},
+								{
+									"key": "category_image",
+									"value": "Formal shoe image",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/admin/updatecategory",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"updatecategory"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sub category",
+			"item": [
+				{
+					"name": "Add sub category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "categoryId",
+									"value": "6448d0c579c3393fcf088ece",
+									"type": "default"
+								},
+								{
+									"key": "sub_category_name",
+									"value": "formal shoe sub category 3",
+									"type": "default"
+								},
+								{
+									"key": "sub_category_image",
+									"value": "shoe image 3",
+									"type": "default"
+								},
+								{
+									"key": "sub_category_desc",
+									"value": "formal shoe sub category descriptionn demo 2",
+									"type": "default"
+								},
+								{
+									"key": "status",
+									"value": "false",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/admin/addsubcategory",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"addsubcategory"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show all Sub categories",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/admin/allsubcategory",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"allsubcategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Single Sub Category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "644ff31434fce7f683580e1c",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/admin/singlesubcategory",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"singlesubcategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Sub Category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "categoryId",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "sub_category_name",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "sub_category_image",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "sub_category_desc",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/admin/updatesubcategory",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"updatesubcategory"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Add Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "categoryId",
+									"value": "6448d03c79c3393fcf088ecc",
+									"type": "default"
+								},
+								{
+									"key": "subcategoryId",
+									"value": "645008099162723c1dac4295",
+									"type": "default"
+								},
+								{
+									"key": "product_name",
+									"value": "adidas",
+									"type": "default"
+								},
+								{
+									"key": "product_image",
+									"value": "adidas 1",
+									"type": "default"
+								},
+								{
+									"key": "product_quantity",
+									"value": "20",
+									"type": "default"
+								},
+								{
+									"key": "product_price",
+									"value": "2000",
+									"type": "default"
+								},
+								{
+									"key": "product_desc",
+									"value": "adidas shoes are best",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/admin/addproduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"addproduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show Products",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/admin/allproduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"allproduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Single Product show",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "645012c3b7b03ed036ec835f",
+									"type": "default"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/admin/getsingleproduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"getsingleproduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "645012c3b7b03ed036ec835f",
+									"type": "default"
+								},
+								{
+									"key": "product_name",
+									"value": "Nike",
+									"type": "default"
+								},
+								{
+									"key": "product_image",
+									"value": "nike jordan",
+									"type": "default"
+								},
+								{
+									"key": "product_desc",
+									"value": "nnnnn",
+									"type": "default"
+								},
+								{
+									"key": "product_price",
+									"value": "2500",
+									"type": "default"
+								},
+								{
+									"key": "product_quantity",
+									"value": "50",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/admin/updateproduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"updateproduct"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "chandan",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "cccc@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "default"
+								},
+								{
+									"key": "contact",
+									"value": "146",
+									"type": "default"
+								},
+								{
+									"key": "address",
+									"value": "vpo jala",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/admin/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
